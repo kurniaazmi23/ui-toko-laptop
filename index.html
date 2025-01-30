@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azmi Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            background-color: #2f2f2f;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 10000;
+            animation: slideIn 1s ease;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 400;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff7f00;
+            transform: translateY(-5px);
+        }
+
+        .container {
+            margin-top: 100px;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            height: 500px;
+            background: url('hero-image.jpg') center center no-repeat;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .hero-section .cta-button {
+            background-color: #ff7f00;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #ff5722;
+        }
+
+        /* Developer Section */
+        .developer-section {
+            background-color: #f8f8f8;
+            padding: 60px 20px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .developer-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .developer-section p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Animation for fade-in and slide-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1.2rem;
+            }
+
+            .developer-section h2 {
+                font-size: 2rem;
+            }
+
+            .developer-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="azmi-store.png" alt="Azmi Store">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Beranda</a>
+        <a href="info.html">Informasi</a>
+        <a href="entry.html">Entri Barang</a>
+        <a href="data.html">Data Barang</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="developer.html">Pengembang</a> <!-- New Developer Link -->
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div>
+            <h1>Selamat Datang di Azmi Store</h1>
+            <p>Toko online terpercaya untuk kebutuhan Anda</p>
+            <a href="shop.html" class="cta-button">Belanja Sekarang</a>
+        </div>
+    </div>
+
+    <!-- Landing Page Content -->
+    <div class="container">
+        <h2>Halaman Utama</h2>
+        <h4>Selamat datang di Sistem Informasi Penjualan Azmi Store</h4>
+    </div>
+
+    <!-- Developer Section -->
+    <div class="developer-section">
+        <h2>Kenali Tim Pengembang Kami</h2>
+        <p>Tim Azmi Store berkomitmen untuk memberikan pengalaman belanja online terbaik. Kami bersemangat dengan teknologi dan berusaha membuat platform kami seuser-friendly mungkin. Para pengembang kami bekerja keras untuk memastikan fungsionalitas yang lancar, keamanan, dan fitur-fitur baru secara teratur.</p>
+    </div>
+</body>
+
+</html>
